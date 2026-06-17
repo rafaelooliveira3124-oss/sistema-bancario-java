@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Conta conta = null;
         Scanner scanner = new Scanner(System.in);
         int opcao;
 
@@ -18,7 +19,10 @@ public class Main {
 
             switch (opcao){
                 case 1:
-                    System.out.println("Criando conta");
+                    String nomeTitular = scanner.nextLine();
+                    Integer numeroConta = scanner.nextInt();
+                    System.out.println("Criando conta...");
+
                     break;
 
                 case 2:
