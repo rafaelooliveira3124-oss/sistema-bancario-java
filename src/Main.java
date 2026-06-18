@@ -34,7 +34,12 @@ public class Main{
                     break;
 
                 case 2:
-                    System.out.println("Saldo atual: ...");
+                    if (conta != null){
+                        System.out.println("Saldo atual: " + conta.getSaldo());
+                } else {
+                        System.out.println("Conta não existe.");
+                    }
+
                     break;
 
                 case 3:
