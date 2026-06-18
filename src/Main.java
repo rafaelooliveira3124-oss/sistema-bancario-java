@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
         Conta conta = null;
         Scanner scanner = new Scanner(System.in);
@@ -16,6 +16,7 @@ public class Main {
             System.out.println("Escolha um opção: ");
 
             opcao = scanner.nextInt();
+            scanner.nextLine();
 
             switch (opcao){
                 case 1:
@@ -25,6 +26,10 @@ public class Main {
                     System.out.println("Digite o número da conta: ");
                     Integer numeroConta = scanner.nextInt();
                     System.out.println("Criando conta...");
+                    System.out.println("Nome: " + nome);
+                    System.out.println("Conta: " + numeroConta);
+                    conta = new Conta(nome, numeroConta);
+                    System.out.println("Conta criada com sucesso!");
 
                     break;
 
