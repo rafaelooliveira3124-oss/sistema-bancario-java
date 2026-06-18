@@ -19,7 +19,10 @@ public class Main {
 
             switch (opcao){
                 case 1:
-                    String nomeTitular = scanner.nextLine();
+
+                    System.out.println("Digite seu nome: ");
+                    String nome = scanner.nextLine();
+                    System.out.println("Digite o número da conta: ");
                     Integer numeroConta = scanner.nextInt();
                     System.out.println("Criando conta...");
 
