@@ -19,6 +19,15 @@ public class Conta {
         return numeroConta;
     }
 
+    public boolean depositar(double deposito){
+        if (deposito>0){
+            saldo = saldo + deposito;
+            return true;
+        } else{
+            return false;
+        }
+    }
+
     public Conta (String nomeTitular, Integer numeroConta) {
         this.nomeTitular = nomeTitular;
         this.numeroConta = numeroConta;
