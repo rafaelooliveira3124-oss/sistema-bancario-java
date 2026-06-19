@@ -19,7 +19,7 @@ public class Conta {
         return numeroConta;
     }
 
-    public boolean depositar(double deposito){
+    public boolean Depositar(double deposito){
         if (deposito>0){
             saldo = saldo + deposito;
             return true;

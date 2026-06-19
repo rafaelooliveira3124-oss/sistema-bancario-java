@@ -43,7 +43,17 @@ public class Main{
                     break;
 
                 case 3:
-                    System.out.println("Valor do depósito: ...");
+                    if (conta !=null){
+                        System.out.println("Digite o valor do depósito: ");
+                        double valorDeposito = scanner.nextDouble();
+                        conta.Depositar(valorDeposito);
+                        boolean resultado = conta.Depositar(valorDeposito);
+                        if (resultado == true){
+                            System.out.println("Valor de: " + "R$ " + valorDeposito + " Depositado com sucesso!");
+                        }else {
+                            System.out.println("Valor inválido!");
+                        }
+                    }
                     break;
 
                 case 4:
