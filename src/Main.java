@@ -57,7 +57,16 @@ public class Main{
                     break;
 
                 case 4:
-                    System.out.println("Valor a sacar: ...");
+                    if (conta !=null){
+                        System.out.println("Digite o valor a sacar: ");
+                        double valorSaque = scanner.nextDouble();
+                        boolean resultado = conta.Sacar(valorSaque);
+                        if (resultado == true){
+                            System.out.println("Valor de: " + "R$ " + valorSaque + " Sacado com sucesso!");
+                        }else {
+                            System.out.println("Valor inválido!");
+                        }
+                    }
                     break;
 
                 case 5:

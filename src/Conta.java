@@ -21,7 +21,7 @@ public class Conta {
 
     public boolean Depositar(double deposito) {
         if (deposito > 0) {
-            saldo = saldo + deposito;
+            saldo =+ deposito;
             return true;
         } else {
             return false;
