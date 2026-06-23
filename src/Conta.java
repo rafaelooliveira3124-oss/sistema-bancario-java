@@ -19,7 +19,7 @@ public class Conta {
         return numeroConta;
     }
 
-    public boolean Depositar(double deposito) {
+    public boolean depositar(double deposito) {
         if (deposito > 0) {
             saldo =+ deposito;
             return true;
@@ -27,7 +27,7 @@ public class Conta {
             return false;
         }
     }
-    public boolean Sacar(double valor){
+    public boolean sacar(double valor){
          if (valor>0){
              if (valor>saldo){
                  return false;

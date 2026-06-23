@@ -46,8 +46,8 @@ public class Main{
                     if (conta !=null){
                         System.out.println("Digite o valor do depósito: ");
                         double valorDeposito = scanner.nextDouble();
-                        conta.Depositar(valorDeposito);
-                        boolean resultado = conta.Depositar(valorDeposito);
+                        conta.depositar(valorDeposito);
+                        boolean resultado = conta.depositar(valorDeposito);
                         if (resultado == true){
                             System.out.println("Valor de: " + "R$ " + valorDeposito + " Depositado com sucesso!");
                         }else {
@@ -60,7 +60,7 @@ public class Main{
                     if (conta !=null){
                         System.out.println("Digite o valor a sacar: ");
                         double valorSaque = scanner.nextDouble();
-                        boolean resultado = conta.Sacar(valorSaque);
+                        boolean resultado = conta.sacar(valorSaque);
                         if (resultado == true){
                             System.out.println("Valor de: " + "R$ " + valorSaque + " Sacado com sucesso!");
                         }else {
